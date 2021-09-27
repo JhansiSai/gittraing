@@ -2,3 +2,5 @@
 
 git config --global user.email "you@domain.com"
 git config --global user.name "github_username"
+
+commands 
