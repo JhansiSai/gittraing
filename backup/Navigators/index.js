@@ -1,0 +1,21 @@
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import React from 'react';
+import LinkingConfig from "./LinkingConfig";
+import Main from "./Main";
+
+export default function Navigation() {
+
+    const rootAppStack = createStackNavigator();
+      
+    return (
+        <NavigationContainer
+            linking={LinkingConfig}
+           // fallback={<SplashLoader/>}
+          //  theme={DefaultTheme}
+        >
+            <Main />
+          {/* {colorScheme === "dark" ? DarkTheme : DefaultTheme} */}
+        </NavigationContainer>
+    );
+  }
